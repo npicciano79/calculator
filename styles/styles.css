@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: inherit;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+html{
+    font-size: 60%;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    display: grid;
+    background-color: beige;
+    width:30%;
+    height:90%;
+    border:solid black;
+    border-style: solid;
+    place-items: center;
+
+
+}
+.title_container{
+    display: grid;
+    place-items: center;
+}
+.calc_screen_container{
+    display: grid;
+    min-width:100%;
+    min-height: 70px;
+    margin-bottom: 10px;
+    border: solid black;
+}
+
+.calculator_screen{
+    width:100%;
+    text-align: right;
+    color: azure;
+    background-color: black;
+   
+    
+}
+
+
+
+.calculator_buttons{
+    display: grid;
+    
+    width:80%;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+  
+    border: solid black;
+
+}
+.plus{
+    grid-column:1/1;
+}
+.minus{
+    grid-column: 2/2;
+}
+.mult{
+    grid-column:3/3;
+
+}
+.div{
+    grid-column: 4/4;
+    grid-row:2;
+}
+.opperation{
+    background-color: red;
+}
+.button{
+    background-color: red;
+}
+.equal{
+    grid-column: 2/4
+}
+.exponent{
+    padding:2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square_root_img{
+    height:40px;
+    width:40px;
+    font-size: 100px;
+}
