@@ -24,7 +24,7 @@ body{
     background-color: beige;
     width:30%;
     height:90%;
-    border:solid black;
+    
     border-style: solid;
     place-items: center;
 
@@ -39,14 +39,18 @@ body{
     min-width:100%;
     min-height: 70px;
     margin-bottom: 10px;
-    border: solid black;
+    
 }
 
 .calculator_screen{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width:100%;
     text-align: right;
     color: azure;
     background-color: black;
+    font-size: 50px;
    
     
 }
@@ -55,13 +59,12 @@ body{
 
 .calculator_buttons{
     display: grid;
-    
+    padding:10px;
     width:80%;
     grid-template-columns: repeat(4,1fr);
     grid-row-gap:10px;
     grid-column-gap:10px;
   
-    border: solid black;
 
 }
 
@@ -79,11 +82,10 @@ body{
     grid-column: 4/4;
     grid-row:2;
 }
-.opperation{
-    background-color: red;
-}
+
 .button{
-    background-color: red;
+    background-color:red;
+    
 }
 .equal{
     grid-column: 2/4
