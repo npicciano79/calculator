@@ -11,36 +11,36 @@
         </div>
         
         <div class="calc_screen_container">
-            <input type="text" class="calculator_screen" value="0">   
+            <span class="calculator_screen" id="calculator_screen" value="0"></span>   
         </div>
          
         
 
         <div class="calculator_buttons">
-            <button type="num_button" class="button 7">7</button>
-            <button type="num_button" class="button 8">8</button>
-            <button type="num_button" class="button 9">9</button>
-            <button type="operator" class="button mult">X</button>
+            <button type="num_button" id="button" class="button 7" value='7'>7</button>
+            <button type="num_button" id="button" class="button 8" value='8'>8</button>
+            <button type="num_button" id="button" class="button 9" value="9">9</button>
+            <button type="operator" id="button" class="button mult" value='x'>X</button>
 
-            <button type="num_button" class="button 4" value="6">4</button>
-            <button type="num_button" class="button 5" value="7">5</button>
-            <button type="num_button" class="button 6" value="8">6</button>
-            <button type="operator" class="button divide">/</button>
+            <button type="num_button" id="button" class="button 4" value="4">4</button>
+            <button type="num_button" id="button" class="button 5" value="5">5</button>
+            <button type="num_button" id="button" class="button 6" value="6">6</button>
+            <button type="operator" id="button" class="button divide" value="/">/</button>
 
-            <button type="num_button" class="button 1" value="1">1</button>
-            <button type="num_button" class="button 2" value="2">2</button>
-            <button type="num_button" class="button 3" value="3">3</button>
-            <button type="operator" class="button plus" value="+">+</button>
+            <button type="num_button" id="button" class="button 1" value="1">1</button>
+            <button type="num_button" id="button" class="button 2" value="2">2</button>
+            <button type="num_button" id="button" class="button 3" value="3">3</button>
+            <button type="operator" id="button" class="button plus" value="+">+</button>
            
 
-            <button type="num_button" class="button 0" value="0">0</button>
-            <button type="operator" class="button decimal">.</button>
-            <button type="operator" class="button radical" value=".">&#8730</button>          
-            <button type="operator" class="button minus">-</button>
+            <button type="num_button" id="button" class="button 0" value="0">0</button>
+            <button type="operator" id="button" class="button decimal" value='.'>.</button>
+            <button type="operator" id="button" class="button radical" value="&#8730">&#8730</button>          
+            <button type="operator" id="button" class="button minus" value="-">-</button>
 
-            <button type="operator" class="button exponent" value=""><var>x<sup>2</sup></var></button>
-            <button type="operator" class="button equal" value="=">=</button>
-            <button type="operator" class="button delete" value="">Del</button>
+            <button type="operator" id="button" class="button exponent" value=""><var>x<sup>2</sup></var></button>
+            <button type="operator" id="button" class="button equal" value="=">=</button>
+            <button type="operator" id="button" class="button delete" value="">Del</button>
             
         </div>
 
@@ -49,7 +49,7 @@
 
 
 
-
+<script src='/odin/calculator/javascript/javascript.js'></script>
     
 </body>
 </html>
