@@ -1,103 +1,57 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: inherit;
-    font-size: 35px;
-    text-transform: uppercase;
-}
-
-html{
-    font-size: 60%;
+*,*::after,*::before{
+    
     box-sizing: border-box;
-    
+    font-family: sans-serif;   
+    font-weight: normal;
 }
-
 body{
-    background-color: lightslategray;
-    display: flex;
+    padding:0;
+    margin:0;
+    background: linear-gradient(to right,#191970, #ff0000);
+}
+
+.calculator-grid{
+    display: grid;
     justify-content: center;
-    align-items: center;
-
+    align-content:center;
+    min-height:100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px,auto)repeat(5,100px);
 }
-.container{
-    display: grid;
-    background-color: beige;
-    width:30%;
-    height:90%;
-    
-    border-style: solid;
-    place-items: center;
-
-
-}
-.title_container{
-    display: grid;
-    place-items: center;
-}
-.calc_screen_container{
-    display: grid;
-    min-width:100%;
-    min-height: 70px;
-    margin-bottom: 10px;
-    
+button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline:none;
+    background-color: rgba(255,255,255,.6);
 }
 
-.calculator_screen{
+button:hover{
+    background-color: rgba(255,255,255,.90);;
+}
+.span-two{
+    grid-column: span 2;
+}
+.output{
+    grid-column: 1/-1;
+    background-color:rgba(0,0,0,.75);
+    color: white;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width:100%;
-    text-align: right;
-    color: azure;
-    background-color: black;
-    font-size: 50px;
-   
-    
-}
-
-
-
-.calculator_buttons{
-    display: grid;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
     padding:10px;
-    width:80%;
-    grid-template-columns: repeat(4,1fr);
-    grid-row-gap:10px;
-    grid-column-gap:10px;
-  
+    word-wrap: break-word;
+    word-break: break-all;
 
 }
 
-.plus{
-    grid-column:4/4;
-}
-.minus{
-    grid-column: 4/4;
-}
-.mult{
-    grid-column:4/4;
-
-}
-.div{
-    grid-column: 4/4;
-    grid-row:2;
+.output .previous-op{
+    color:rgba(255,255,255,.75);
+    font-size: 1.5rem;
 }
 
-.button{
-    background-color:red;
-    
-}
-.equal{
-    grid-column: 2/4
-}
-.exponent{
-    padding:2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.square_root_img{
-    height:40px;
-    width:40px;
-    font-size: 100px;
+.output .current-op{
+    color: white;
+    font-size:1.5rem;
 }
